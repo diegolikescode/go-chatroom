@@ -1,7 +1,16 @@
-#include <stdio.h>
+#include <stdint.h>
 
-int main() {
-  printf("Dale\n");
+#include "./server/start_it.c"
 
-  return 0;
+#define PORT 3333
+#define BACKLOG 5
+
+int main(int argc, char *argv[]) {
+    if (argc != 2) {
+        fprintf(stderr, "usage: showip hostname\n");
+        return 1;
+    }
+
+    start_serv(argv[1]);
+    return 0;
 }
