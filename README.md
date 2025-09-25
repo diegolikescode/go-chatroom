@@ -1,4 +1,4 @@
-# CLANG THE CHAT ROOM
+# GO THE CHAT ROOM
 
 - it takes connections
 - a new conn 'join' with a string
